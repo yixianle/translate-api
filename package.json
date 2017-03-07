@@ -1,0 +1,33 @@
+{
+  "name": "translate-api",
+  "version": "0.1.0",
+  "description": "google translate api page",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "babel-preset-stage-3": "^6.22.0",
+    "cheerio": "^0.22.0",
+    "google-translate-token": "^1.0.0",
+    "request": "^2.80.0",
+    "request-promise": "^4.1.1",
+    "safe-eval": "^0.3.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yixianle/translate-api.git"
+  },
+  "keywords": [
+    "google",
+    "translate",
+    "api",
+    "page"
+  ],
+  "author": "lele",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yixianle/translate-api/issues"
+  },
+  "homepage": "https://github.com/yixianle/translate-api#readme"
+}

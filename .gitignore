@@ -1,0 +1,27 @@
+# See http://help.github.com/ignore-files/ for more about ignoring files.
+*.iml
+.idea/
+.vscode/
+.ipr
+.iws
+*~
+~*
+*.diff
+*.patch
+*.bak
+*.bat
+.DS_Store
+Thumbs.db
+.svn/
+*.swp
+.nojekyll
+.project
+.settings/
+node_modules/
+
+# production
+build
+
+# misc
+.DS_Store
+npm-debug.log
