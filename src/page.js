@@ -17,7 +17,7 @@ const userAgent = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/5
 
 // 翻译网页
 const getPage = (targetUrl)=>{
-  console.log(targetUrl,"---------- url ---------")
+  console.log(targetUrl,"---------- translate begin ----------")
   let parameter ={
     sl: 'en',
     tl: 'zh-CN',
@@ -32,7 +32,7 @@ const getPage = (targetUrl)=>{
   let firstUrl = translateGoogle + queryString.stringify(parameter)
   
 
-  console.log(firstUrl,"---translate begin ----")
+  //console.log(firstUrl,"---translate begin ----")
   return rp(firstUrl).then(function (htmlString) {
     let $ = cheerio.load(htmlString)
     let translateUrl = $('body iframe[name="c"]').attr('src')
@@ -51,7 +51,7 @@ const getPage = (targetUrl)=>{
     return Promise.all([rp(targetUrl), rp(options)])
     //return rp(options)
   }).then(function(htmlStrings){
-    console.log("---translate end ----")
+    console.log("---------- translate end ----------")
     return removeTranslateMark(htmlStrings)
   })
   
