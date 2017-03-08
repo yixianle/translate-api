@@ -1,10 +1,4 @@
 "use strict";
-// import queryString from 'querystring'
-// import url from 'url'
-// import rp from 'request-promise'
-// import cheerio from 'cheerio'
-
-// import {translateGoogle} from './config'
 
 const queryString = require('querystring')
 const url = require('url')

@@ -1,10 +1,5 @@
 "use strict";
-// import querystring from 'querystring';
-// import rp from 'request-promise';
-// import token from 'google-translate-token';
-// import safeEval from 'safe-eval';
 
-// import languages from './languages';
 const querystring = require('querystring')
 
 const rp = require('request-promise')
