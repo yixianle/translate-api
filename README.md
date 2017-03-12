@@ -5,7 +5,7 @@ Automatically handles bulk translations that exceed the Google Translation API q
 ## DEMO
 http://translate.hotcn.top/
 
-<img alt="google translate" src="https://github.com/yixianle/google-translate/blob/master/public/demo.gif">
+<img alt="google translate" src="https://raw.githubusercontent.com/yixianle/google-translate/master/public/demo.gif">
 
 ## Npm Module
 
