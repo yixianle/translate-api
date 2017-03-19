@@ -1,6 +1,7 @@
 # jsoneditor
 A Node.js module for working with the Google Translation.
 Automatically handles bulk translations that exceed the Google Translation API query limit. <br/>
+
 ## DEMO
 http://translate.hotcn.top/
 
