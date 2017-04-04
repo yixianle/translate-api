@@ -1,6 +1,6 @@
 {
   "name": "translate-api",
-  "version": "0.2.14",
+  "version": "0.3.0",
   "description": "google translate api page",
   "main": "index.js",
   "scripts": {
