@@ -81,7 +81,7 @@ const getText = (text, opts)=>{
 
 		let body = safeEval(res);
 		body[0].forEach(function (obj) {
-			if (obj[0] !== undefined) {
+			if (obj[0] !== null) {
 				result.text += obj[0];
 			}
 		});
@@ -93,15 +93,15 @@ const getText = (text, opts)=>{
 			result.from.language.iso = body[8][0][0];
 		}
 
-		if (body[7] !== undefined && body[7][0] !== undefined) {
-			let str = body[7][0];
+		if (body[5] !== undefined && body[5][0] !== undefined && body[5][0][0] !== undefined) {
+			let str = body[5][0][0];
 
 			str = str.replace(/<b><i>/g, '[');
 			str = str.replace(/<\/i><\/b>/g, ']');
 
 			result.from.text.value = str;
 
-			if (body[7][5] === true) {
+			if (body[5][0][5] === 1) {
 					result.from.text.autoCorrected = true;
 			} else {
 					result.from.text.didYouMean = true;
