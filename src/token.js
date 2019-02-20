@@ -74,9 +74,7 @@ function updateTKK() {
               encoding: 'UTF-8',
               headers: {
                   'User-Agent': userAgent
-              },
-              // debug proxy
-              'proxy':'http://127.0.0.1:8118'
+              }
             }
             rp(options).then(function (res) {
                 var code = res.match(/TKK=(.*?)\(\)\)'\);/g);
