@@ -5,9 +5,7 @@ const url = require('url')
 const rp = require('request-promise')
 const cheerio = require('cheerio')
 
-const translateGoogle = require('./config').translateGoogle
-
-const userAgent = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36'
+const {translateGoogle, userAgent} = require('./config')
 
 // 翻译网页
 const getPage = (targetUrl)=>{

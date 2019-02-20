@@ -1,6 +1,6 @@
 {
   "name": "translate-api",
-  "version": "0.3.14",
+  "version": "0.3.16",
   "description": "google translate api page",
   "main": "index.js",
   "scripts": {
@@ -8,7 +8,6 @@
   },
   "dependencies": {
     "cheerio": "^0.22.0",
-    "google-translate-token": "^1.0.0",
     "request": "^2.80.0",
     "request-promise": "^4.1.1",
     "safe-eval": "^0.3.0"

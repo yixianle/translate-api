@@ -3,14 +3,14 @@
 const querystring = require('querystring')
 
 const rp = require('request-promise')
-const token = require('google-translate-token')
 const safeEval = require('safe-eval')
 
 const languages = require('./languages')
+const token = require('./token')
 
 const getText = (text, opts)=>{
 	opts = opts || {};
-
+	
 	let e;
 	[opts.from, opts.to].forEach(function (lang) {
 		if (lang && !languages.isSupported(lang)) {

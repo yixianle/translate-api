@@ -3,7 +3,7 @@ A Node.js module for working with the Google Translation.
 Automatically handles bulk translations that exceed the Google Translation API query limit.
 
 ## DEMO
-http://translate.hotcn.top/
+http://translate.witbag.cn/
 
 <img alt="google translate" src="https://raw.githubusercontent.com/yixianle/google-translate/master/public/demo.gif">
 
